@@ -410,3 +410,9 @@
 .d_inline_block {
     display: inline-block;
 }
+
+.bg_image{
+    background-image: url('../Images/png/');
+    background-size: cover;
+    background-position: center;
+}
