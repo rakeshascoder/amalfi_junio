@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+  .col_md_6 {
+    width: 100%;
+  }
+
+  .align_center {
+    flex-direction: column;
+    text-align: center;
+  }
+  .custom_container {
+    width: 90%;
+    padding: 20px;
+  }
+}
