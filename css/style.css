@@ -485,9 +485,11 @@
     background-image: url('../Images/png/lightjet.png');
     background-repeat: no-repeat;
     width: 100%;
+
     min-height: 80vh;
     background-size: cover;
     background-position: center;
+
 }
 
 .bg_image_midsizejet {
@@ -537,7 +539,7 @@
     width: 100%;
     height: 100%;
     background-color: #00000080;
-    z-index: 1;
+    /* z-index: 1; */
     display: flex;
     align-items: center;
     justify-content: end;
@@ -575,8 +577,17 @@
     text-transform: uppercase;
 }
 
-.body {
+.Jai_bg_img {
     background: url('../Images/png/demand.png') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Jai_bg_img_enterorise {
+    background: url('../Images/png/lightjet.png');
     color: #fff;
     height: 100vh;
     display: flex;
@@ -745,9 +756,18 @@
     background-color: #000;
 }
 
-.image-container img {
-    width: 100%;
-    height: 100%;
+.bg_scrim {
+
+    z-index: 1;
+    background-color: #00000080;
+    position: absolute;
+    inset: 0%;
+
+}
+
+.bg-scrim.gradient-bottom-up {
+    background-color: #0003;
+    background-image: linear-gradient(#0000, #000000c2 75%, #000);
 }
 
 .specifications {
@@ -1095,4 +1115,50 @@ select option {
 
 .mt_70 {
     margin-top: 70px;
+}
+
+nav {
+    will-change: background;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+}
+
+.top_0 {
+    top: 0;
+}
+
+.z_1 {
+    z-index: 1;
+}
+
+.object_cover {
+    object-fit: cover;
+}
+
+.mb_41 {
+    margin-bottom: 41px;
+}
+
+.line_height_25 {
+    line-height: 25px;
+}
+
+.line_height_20 {
+    line-height: 20px;
+}
+
+.jai_flight_btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
