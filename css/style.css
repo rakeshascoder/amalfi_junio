@@ -462,88 +462,34 @@
     display: inline-block;
 }
 
-.bg_image {
-    background-image: url('../Images/png/programsimg.png.avif');
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: calc(100vh - 90px);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.bg_demandImg {
-    background-image: url('../Images/png/demand.png');
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg_image_lightJet {
-    background-image: url('../Images/png/lightjet.png');
-    background-repeat: no-repeat;
-    width: 100%;
-
-    min-height: 80vh;
-    background-size: cover;
-    background-position: center;
-
-}
-
-.bg_image_midsizejet {
-    background-image: url('../Images/png/midsize.png');
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 80vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg_image_supermid {
-    background-image: url('../Images/png/supermid.png');
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 80vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg_image_Heavy {
-    background-image: url('../Images/png/heavyJet.png');
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 85vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg_image_Ultra {
-    background-image: url('../Images/png/ultraJet.png');
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 85vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.bg_overlay {
+.overlay_content {
     position: relative;
 }
 
 .overlay_content {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0.77%;
     width: 100%;
     height: 100%;
     background-color: #00000080;
-    /* z-index: 1; */
+    display: flex;
+    align-items: end;
+    padding-bottom: 2rem;
+}
+
+.jai_overlay_content {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
     display: flex;
     align-items: center;
-    justify-content: end;
     text-align: center;
+    padding-bottom: 2rem;
+
 }
 
 .p_67 {
@@ -581,18 +527,12 @@
     background: url('../Images/png/demand.png') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .Jai_bg_img_enterorise {
     background: url('../Images/png/lightjet.png');
     color: #fff;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .header {
@@ -607,7 +547,7 @@
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0.1%;
 }
 
 .container {
@@ -841,6 +781,15 @@
 
 .gap_40 {
     gap: 40px;
+}
+
+.gap_4 {
+    gap: 4px;
+}
+
+.px_10 {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .gap_10 {
@@ -1161,4 +1110,290 @@ nav {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+}
+
+
+.enterprise-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.enterprise-card {
+    background-color: #000;
+    color: #f5f5f5;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enterprise-content {
+    padding: 25px;
+}
+
+.enterprise-content h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.enterprise-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.explore-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.jai_bg_pink {
+    background-color: #f3f0f4;
+}
+
+.jai_aircraft_btn {
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bg_image {
+    background-image: url('../Images/png/programsimg.png.avif');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: calc(100vh - 90px);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bg_demandImg {
+    background-image: url('../Images/png/demand.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg_image_lightJet {
+    background-image: url('../Images/png/lightjet.png');
+    background-repeat: no-repeat;
+    width: 100%;
+
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.bg_image_midsizejet {
+    background-image: url('../Images/png/midsize.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg_image_supermid {
+    background-image: url('../Images/png/supermid.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg_image_Heavy {
+    background-image: url('../Images/png/heavyJet.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 85vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg_image_Ultra {
+    background-image: url('../Images/png/ultraJet.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 85vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg_footer_enterImg {
+    background-image: url('../Images/png/footerInterprise.png');
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    height: 500px;
+    /* min-height: 80vh; */
+    background-position: center;
+    background-size: cover;
+}
+
+.jai_bg_overlay {
+    position: relative;
+}
+
+.jai_bg_overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.overlay_text {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    padding: 10px;
+}
+
+.jai_getInfo_btn {
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    padding: 16px 22px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.Jai_bg_img_OneJetCard {
+    background-image: url('../Images/png/oneJetCard.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    color: white;
+    /* background-position: center; */
+}
+
+.jet-card-section {
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.text-container {
+    max-width: 500px;
+}
+
+.text-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #444;
+}
+
+
+.flight_card {
+    width: 340px;
+}
+
+.flight_card_icon {
+    height: 15px;
+    width: 15px;
+    color: white;
+}
+
+.flight_card_content {
+    margin: 0px 16px 16px 16px;
+    padding: 10px;
+    grid-column-gap: 10px;
+    border-radius: 10px;
+    -webkit-backdrop-filter: saturate(133%) brightness(40%) blur(20px);
+    backdrop-filter: saturate(133%) brightness(40%) blur(20px);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    inset: auto 0% 0%;
+    overflow: hidden;
+    box-shadow: 0 6px 20px #0003;
+}
+
+.arrow_btn {
+    background-color: black;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 10px 25px;
+    transition: color 0.5s, background-color 0.5s;
+    display: flex;
+}
+
+.border_right {
+    border-right: 1px solid #ccc;
+    height: 80px;
+}
+
+.border_bottom {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
 }
