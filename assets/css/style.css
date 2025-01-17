@@ -581,6 +581,55 @@ ul li a {
   margin-top: -5px;
 }
 /* navbar */
+
+.menu_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  background-color: black;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.menu_content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.menu_content .contact_btn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.menu_item {
+  background-color: black;
+}
+.menu_item:hover {
+  background-color: #1f1f23;
+}
+.close_menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.menu_overlay.active {
+  min-width: 30vw;
+}
 .p_nav {
   background-color: #000;
   opacity: 85%;
@@ -621,6 +670,9 @@ ul li a {
   font-size: 13px;
 }
 
+.d_block {
+  display: block;
+}
 .p_3 {
   padding: 16px;
 }
@@ -781,10 +833,11 @@ select option {
 
 .bg_laptop_img {
   background-image: url("/assets/images/png/amalfijetslaptop.webp");
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 70vh;
+  object-fit: cover;
+  height: 45vh;
 }
 .overline {
   letter-spacing: 0.128em;
@@ -868,10 +921,13 @@ select option {
   content: "";
   position: absolute;
   width: 100%;
-  height: calc(100% - 62px);
-  /* height: 100%; */
-  background-color: #000;
-  opacity: 50%;
+  height: calc(100% - 61.5px);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 1)
+  );
   z-index: 1;
   top: 7%;
 }
@@ -906,7 +962,12 @@ select option {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 1)
+  );
   z-index: 2;
 }
 
@@ -1026,4 +1087,85 @@ select option {
   opacity: 50%;
   display: flex;
   margin: 41px 0px;
+}
+.p_4 {
+  padding: 24px;
+}
+/* opreations css */
+
+.bg_opreations_img {
+  background-image: url("/assets/images/png/aeroplaneopreations.avif");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.h_100 {
+  height: 100%;
+}
+.m_w_430 {
+  max-width: 430px;
+}
+
+.overlay_laptop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  text-align: center;
+  color: white !important;
+  z-index: 1;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.description {
+  font-size: 16px;
+  margin: 16px auto 32px;
+  max-width: 430px;
+  font-weight: 400;
+}
+.bg_escapades_img {
+  background-image: url("/assets/images/png/whyamalfiimg.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.bg_grey {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+}
+.titleb {
+  letter-spacing: 0.8px;
+  font-size: 1.618em;
+  font-weight: 400;
+  line-height: 1.272;
+  text-transform: uppercase;
+}
+.opacity_75 {
+  opacity: 75%;
+}
+.display2 {
+  font-size: 2.618em;
+  font-weight: 400;
+  line-height: 1.272;
+  color: #000;
+  text-transform: uppercase;
+}
+.pos_phone {
+  position: absolute;
+  top: -48%;
+  right: 2%;
+  z-index: -1;
 }
