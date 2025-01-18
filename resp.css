@@ -5,10 +5,32 @@
         --fs_base: 14px;
         --fs_md: 15px;
         --fs_lg: 16px;
-        --fs_xl: 20px;
+        --fs_xl: 17px;
         --fs_2xl: 33px;
         --fs_3xl: 41px;
-        --fs_4xl: 68px;
+        --fs_4xl: 40px;
+    }
+
+    .specifications h2 {
+        font-size: 21px;
+    }
+
+    .specifications-list li span {
+        font-size: 11px;
+    }
+
+    .xsm_flex_column {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    .sm_display_none {
+        display: none;
+    }
+
+    .col_xsm_12 {
+        width: 100%;
     }
 }
 
@@ -19,10 +41,32 @@
         --fs_base: 14px;
         --fs_md: 15px;
         --fs_lg: 16px;
-        --fs_xl: 20px;
+        --fs_xl: 19px;
         --fs_2xl: 33px;
         --fs_3xl: 41px;
-        --fs_4xl: 68px;
+        --fs_4xl: 50px;
+    }
+
+    .sm_flex_column {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    .sm_display_none {
+        display: none;
+    }
+
+    .sm_padding_67_1 {
+        padding: 67px 1px;
+    }
+
+    .col_sm_12 {
+        width: 100%;
+    }
+
+    .sm_ps_0 {
+        padding-left: 0px;
     }
 }
 
@@ -33,10 +77,44 @@
         --fs_base: 14px;
         --fs_md: 15px;
         --fs_lg: 16px;
-        --fs_xl: 20px;
+        --fs_xl: 19px;
         --fs_2xl: 33px;
         --fs_3xl: 41px;
-        --fs_4xl: 68px;
+        --fs_4xl: 54px;
+    }
+
+    .md_flex_column {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .specifications-list li span {
+        font-size: 10px;
+    }
+
+    .md_flex_row_revers {
+        flex-direction: row-reverse;
+    }
+
+    .md_display_block {
+        display: block;
+    }
+
+    .md_ps_0 {
+        padding-left: 0px;
+    }
+
+    .md_p_right20 {
+        padding-right: -12px;
+    }
+
+    .col_md_6 {
+        width: 50%;
+    }
+
+    .col_md_5 {
+        width: 41.66%;
     }
 }
 
@@ -52,6 +130,28 @@
         --fs_3xl: 41px;
         --fs_4xl: 68px;
     }
+
+    .lg_flex_column {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .specifications-list li span {
+        font-size: 14px;
+    }
+
+    .lg_flex_row {
+        flex-direction: row;
+    }
+
+    .ps_5 {
+        padding-left: 48px;
+    }
+
+    .p_67 {
+        padding: 67px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -65,6 +165,10 @@
         --fs_2xl: 33px;
         --fs_3xl: 41px;
         --fs_4xl: 68px;
+    }
+
+    .specifications-list li span {
+        font-size: 16px;
     }
 }
 

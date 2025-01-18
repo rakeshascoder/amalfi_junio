@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LightJet</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./resp.css">
     <script src="./js.js"></script>
 
 </head>
@@ -13,7 +14,7 @@
 <body>
 
     <header class="bg_overlay">
-        <div class="sticky top_0 z_1">
+        <!-- <div class="sticky top_0 z_1">
             <nav class="d_flex absolute z_1 justify_space_between w_100">
                 <div class="d_flex align_center">
                     <ul class="d_flex gap_40">
@@ -42,25 +43,26 @@
                         charter</a>
                 </div>
             </nav>
-        </div>
+        </div> -->
         <div class="bg_image_lightJet">
             <div class="jai_overlay_content">
                 <div class="custom_container">
 
                     <h1 class="fs_4xl  fw_normal clr_white line_height leter_space_06 ">LIGHT JETS</h1>
-                    <div class="d_flex justify_content_center mt_4">
+                    <div
+                        class="d_flex justify_content_center mt_4 xsm_flex_column sm_flex_column md_flex_column lg_flex_column">
                         <div class="d_flex align_center ">
                             <span class="clr_white opacity__75">👤</span>
-                            <h2 class="fs_xl fw_medium clr_white line_height leter_space_03 ps_2">Up to 12 Passengers
+                            <h2 class="fs_xl fw_medium clr_white line_height leter_space_03 ps_2">Up to 6 Passengers
                             </h2>
                         </div>
                         <div class="d_flex align_center ms_3">
                             <span class="clr_white opacity__75">📖</span>
-                            <h2 class="fs_xl fw_medium clr_white line_height leter_space_03 ps_2">Up to 42,00 Range</h2>
+                            <h2 class="fs_xl fw_medium clr_white line_height leter_space_03 ps_2">Up to 16,00 Range</h2>
                         </div>
                         <div class="d_flex align_center ms_3">
                             <span class="clr_white opacity__75">⏱</span>
-                            <h2 class="fs_xl fw_medium clr_white line_height leter_space_03 ps_2">Up to 42 Hour Flghts
+                            <h2 class="fs_xl fw_medium clr_white line_height leter_space_03 ps_2">Up to 4 Hour Flghts
                             </h2>
                         </div>
                     </div>
@@ -71,14 +73,15 @@
     </header>
 
     <main class="bg_black">
-        <section class="custom_container p_67">
+        <section class="custom_container p_67 sm_padding_67_1">
             <div class="container">
-                <div class="row justify_space_between">
-                    <div class="col_6  mt_5">
-                        <img height="100%" class="w_100 object_cover" src="./Images/png/flightairoplane.png" alt="Jet Exterior">
+                <div class="row justify_space_between md_flex_row_revers lg_flex_row">
+                    <div class="col_6 col_md_5 mt_5 sm_display_none md_display_block md_p_right20">
+                        <img height="100%" class="w_100 object_cover" src="./Images/png/flightairoplane.png"
+                            alt="Jet Exterior">
                     </div>
 
-                    <div class="col_6 specifications ps_5">
+                    <div class="col_md_6 col_xsm_12 col_sm_12 specifications ps_5 sm_ps_0 md_ps_0">
                         <img class="w_100" src="./Images/png/flightchair.png" alt="Jet Interior">
                         <h2>Specifications</h2>
                         <ul class="specifications-list d">
@@ -112,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <div class="custom_container">
+        <!-- <div class="custom_container">
             <section class="p_67 footer">
                 <div class="row justify_space_between">
                     <div class="col_4">
@@ -273,7 +276,7 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </div> -->
     </main>
 
 
