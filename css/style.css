@@ -1100,6 +1100,9 @@ nav {
     z-index: 1;
 }
 
+.clr_grey2 {
+    color: #c6c6c7;
+}
 
 .bg_image {
     background-image: url('../Images/png/programsimg.png.avif');

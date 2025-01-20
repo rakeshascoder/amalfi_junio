@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UltraJet</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./Responsive/resp.css">
     <script src="./js.js"></script>
 
 </head>
@@ -13,7 +14,7 @@
 <body>
 
     <header class="bg_overlay">
-        <div class="sticky top_0 z_1">
+        <!-- <div class="sticky top_0 z_1">
             <nav class="d_flex absolute z_1 justify_space_between w_100">
                 <div class="d_flex align_center">
                     <ul class="d_flex gap_40">
@@ -42,14 +43,15 @@
                         charter</a>
                 </div>
             </nav>
-        </div>
+        </div> -->
         <div class="bg_image_Ultra">
             <div class="jai_overlay_content">
                 <div class="custom_container">
                     <h1 class="fs_4xl  fw_normal clr_white line_height leter_space_06 text_uppercase">Ultra Long Haul
                         Jets
                     </h1>
-                    <div class="d_flex justify_content_center mt_4">
+                    <div
+                        class="d_flex justify_content_center mt_4 xsm_flex_column sm_flex_column  lg_flex_row">
                         <div class="d_flex align_center ">
                             <span class="clr_white opacity__75">👤</span>
                             <h2 class="fs_xl fw_medium clr_white line_height leter_space_03 ps_2">Up to 14 Passengers
@@ -72,14 +74,15 @@
     </header>
 
     <main class="bg_black">
-        <section class="custom_container p_67">
+        <section class="custom_container p_67 sm_padding_67_1">
             <div class="container">
-                <div class="row justify_space_between">
-                    <div class="col_6  mt_5 ">
-                        <img height="100%" class="w_100 pe_5 me_5 object_cover" src="./Images/png/ultraseat.png" alt="Jet Exterior">
+                <div class="row justify_space_between md_flex_row_revers lg_flex_row">
+                    <div class="col_6  col_md_5 col_lg_6 mt_5 sm_display_none md_display_block">
+                        <img height="100%" class="w_100 pe_5 me_5 object_cover" src="./Images/png/ultraseat.png"
+                            alt="Jet Exterior">
                     </div>
 
-                    <div class="col_6 specifications">
+                    <div class="col_md_6 col_xsm_12 col_sm_12 specifications ps_5 xsm_ps_5 sm_ps_0 md_ps_0">
                         <img class="w_100 " src="./Images/png/Ultra.png" alt="Jet Interior">
                         <h2>Specifications</h2>
                         <ul class="specifications-list d">
@@ -116,24 +119,24 @@
         <div class="custom_container">
             <section class="p_67 footer">
                 <div class="row justify_space_between">
-                    <div class="col_4">
+                    <div class="col_12 col_sm_12 col_md_8 col_lg_4">
                         <img width="177" src="./Images/png/logo.png" alt="" />
                     </div>
 
-                    <div class="col_7">
+                    <div class="col_12 col_sm_12 col_lg_7 col_md_12 mt_3">
                         <div class="row justify_space_between">
-                            <div class="col_3">
+                            <div class="col_12 col_sm_12 col_md_4">
                                 <p class="text_gray_darker fs_xsm fw_normal">Call</p>
                                 <p class="fs_lg fw_normal mt_4">+1 (877) 6-AMALFI</p>
                             </div>
 
-                            <div class="col_3">
+                            <div class="col_12 col_sm_12 col_md_4 mt_3">
                                 <p class="text_gray_darker fs_xsm fw_normal">Email</p>
                                 <p class="fs_lg fw_normal mt_4 text_uppercase">
                                     enquiry@amalfijets.com
                                 </p>
                             </div>
-                            <div class="col_3">
+                            <div class="col_12 col_sm_12 col_md_4 mt_3">
                                 <p class="text_gray_darker fs_xsm fw_normal">Social</p>
                                 <div class="d_flex gap_10 mt_4">
                                     <img width="16" height="18" class="bg_white" src="./Images/png/tiktoker.png"
@@ -149,8 +152,8 @@
                 </div>
 
                 <div class="border_line"></div>
-                <div class="row">
-                    <div class="col_3">
+                <div class="row md_justify_content xsm_text_center">
+                    <div class="col_12 col_sm_6 col_lg_3">
                         <h4 class="mb_4 fs_lg text_uppercase">Our Program</h4>
                         <ul class="d_flex flex_column gap_10">
                             <li>
@@ -168,7 +171,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col_2">
+                    <div class="col_12 col_sm_6 col_lg_2 mt_xsm_4">
                         <h4 class="mb_4 fs_lg text_uppercase">Aircraft</h4>
                         <ul class="d_flex flex_column gap_10">
                             <li>
@@ -188,7 +191,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col_2">
+                    <div class="col_12 col_sm_6 col_lg_2 mt_xsm_4 mt_sm_4 mt_lg_0">
                         <h4 class="mb_4 fs_lg text_uppercase">Why Amalfi</h4>
                         <ul class="d_flex flex_column gap_10">
                             <li>
@@ -208,7 +211,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col_2">
+                    <div class="col_12 col_sm_6 col_lg_2 mt_xsm_4 mt_sm_4 mt_lg_0">
                         <h4 class="mb_4 fs_lg text_uppercase">Engage</h4>
                         <ul class="d_flex flex_column gap_10">
                             <li>
@@ -225,10 +228,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col_3">
-                        <h4 class="mb_4 fs_lg text_uppercase">Stay Updated</h4>
+                    <div class="col_12 col_md_8 col_lg_3 mt_xsm_4 mt_sm_4 mt_lg_0">
+                        <h4 class="mb_4 fs_lg text_uppercase sm_text_align_center lg_text_align_start">Stay Updated</h4>
                         <form>
-                            <input class="footer_input text_white" type="email" placeholder="Enter email address" />
+                            <input class="footer_input clr_white" type="email" placeholder="Enter email address" />
                             <div>
                                 <input class="submit_btn" type="submit" value="Submit" />
                             </div>
@@ -241,7 +244,7 @@
                         &copy; 2020-2024 All rights reserved. Amalfi Jets Inc.
                     </div>
                     <br /><br /><br />
-                    <div class="text_align_center fs_xsm">
+                    <div class="text_align_center fs_xsm clr_grey2">
                         The Amalfi One Jet Card, Amalfi Enterprise Program, and On-Demand
                         Charter Program are programs of Amalfi Jets, an "Air Charter Broker"
                         under DOT Regulations operating under Part 295 Regulations on behalf
