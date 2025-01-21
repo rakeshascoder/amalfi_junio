@@ -10,7 +10,7 @@
 }
 
 .custom_container {
-  max-width: 1600px;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -909,9 +909,9 @@ select option {
   background-image: url("/assets/images/png/amalfijetslaptop.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   object-fit: cover;
-  height: 45vh;
+  min-height: 95vh;
 }
 .overline {
   letter-spacing: 0.128em;
@@ -1248,4 +1248,7 @@ select option {
 }
 .flex_wrap {
   flex-wrap: wrap;
+}
+.p_25 {
+  padding: 25px;
 }
