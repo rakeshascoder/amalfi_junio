@@ -475,7 +475,7 @@
 .overlay_content {
     position: absolute;
     top: 0;
-    left: 0.77%;
+    left: 12px;
     width: 100%;
     height: 100%;
     background-color: #00000080;
@@ -529,7 +529,7 @@
 
 .chartering-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 12px;
 }
 
 .chartering-section h2 {
@@ -552,10 +552,6 @@
 
 .max_w_300 {
     max-width: 380px;
-}
-
-.bg_black {
-    background-color: #000;
 }
 
 .clr_grey {
@@ -1181,6 +1177,19 @@ nav {
     color: white;
 }
 
+.bg_black {
+    background-color: #000;
+}
+
+.flex_wrap {
+    text-align: center;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    gap: 20px;
+}
+
 .Jai_bg_img_Beach {
     background-image: url('../Images/png/beach.png');
     background-repeat: no-repeat;
@@ -1190,6 +1199,10 @@ nav {
     color: white;
 }
 
+/* .Jai_bg_img_Beach {
+    display: none;
+} */
+
 .Jai_bg_img_FooterCard {
     background-image: url('../Images/png/FooterJetcard.png');
     background-repeat: no-repeat;
@@ -1198,22 +1211,6 @@ nav {
     background-position: center;
     background-size: cover;
     color: white;
-}
-
-.jai_overlay_Membership {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.087),
-            rgba(0, 0, 0, 0.596),
-            rgba(0, 0, 0, 0.909));
-    display: flex;
-    align-items: end;
-    text-align: center;
-    padding: 64px;
 }
 
 .btn_download {
@@ -1409,6 +1406,8 @@ nav {
     background: url('../Images/png/lightjet.png');
     color: #fff;
     height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .bg_footer_enterImg {
@@ -1446,6 +1445,7 @@ nav {
     overflow: hidden;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
 .enterprise-content {
